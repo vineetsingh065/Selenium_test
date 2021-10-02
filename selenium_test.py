@@ -36,8 +36,9 @@ repo_list = driver.find_elements(By.XPATH, "//ul[@class='repo-list']/li")
 
 assert len(repo_list) == 1, "multiple repos available after advance search"
 
+repo = "mvoloskov/decider"
 repo_name = driver.find_element_by_xpath('//div[@class="f4 text-normal"]/a')
-assert repo_name.text == "mvoloskov/decider", f"{mvoloskov/decider} repo not found"
+assert repo_name.text == "mvoloskov/decider", f"{repo} repo not found"
 
 repo_name.click()
 
